@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Jua';
+    src: url('./fonts/Jua.ttf');
+}
+
+body {
+  background-color: #4CABFF;
+  font-family: Jua;
+}
