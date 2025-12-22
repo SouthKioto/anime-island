@@ -1,3 +1,5 @@
+import axios from "axios";
+
 import { NavLink } from "react-router";
 import anime_isle_logo from "../images/anime_isle.png";
 
@@ -8,13 +10,6 @@ export const NavBar = () => {
 
   const [isLoggedIn, SetIsLoggetIn] = useState(false);
 
-  const Greetings = () => {
-    alert("Siema")
-  }
-
-  const Greetings1 = () => {
-    alert("Siema1")
-  }
 
   return (
     <>
@@ -56,9 +51,9 @@ export const NavBar = () => {
         {/* Sekcja logowanie */}
         <div className="flex items-center">
           {isLoggedIn ? (
-            <LogRegButt name="Your Account" navigate={'/userAcc'} onClick={Greetings} />
+            <LogRegButt name="Your Account" navigate={'/userAcc'} />
           ) : (
-            <LogRegButt name="Log In" navigate={'/login'} onClick={Greetings1} />
+            <LogRegButt name="Log In" navigate={'/login'} />
           )}
         </div>
       </div>

@@ -6,6 +6,8 @@ import { Home } from './pages/Home.tsx';
 
 import "./css/tailwind.css";
 import "./css/main.css";
+import { Login } from './pages/Login.tsx';
+import { Register } from './pages/Register.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +16,11 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Navigate to="/home" replace />} />
 
         <Route path='/home' element={<Home />} />
+
+        <Route path='/login' element={<Login />} />
+
+        <Route path='/register' element={<Register />} />
+
 
         {/* 
         <Route path="about" element={<About />} /> 
