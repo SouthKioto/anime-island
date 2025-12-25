@@ -10,6 +10,10 @@ export const NavBar = () => {
 
   const [isLoggedIn, SetIsLoggetIn] = useState(false);
 
+  const checkIsLogged = () => {
+
+
+  }
 
   return (
     <>
