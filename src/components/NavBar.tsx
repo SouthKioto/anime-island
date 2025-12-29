@@ -12,7 +12,6 @@ export const NavBar = () => {
 
   const checkIsLogged = () => {
 
-
   }
 
   return (
@@ -29,7 +28,7 @@ export const NavBar = () => {
         <ul className="flex-1 flex justify-center space-x-5 text-[20px]">
           <li className="cursor-pointer">
             <NavLink to={'/anime_list'}>
-              <p className="hover:text-2xl">
+              <p>
                 Anime
               </p>
             </NavLink>
@@ -37,7 +36,7 @@ export const NavBar = () => {
 
           <li className="cursor-pointer">
             <NavLink to={'/serach'}>
-              <p className="hover:text-2xl">
+              <p>
                 Search
               </p>
             </NavLink>
@@ -45,7 +44,7 @@ export const NavBar = () => {
 
           <li className="cursor-pointer">
             <NavLink to={'/commnets'}>
-              <p className="hover:text-2xl">
+              <p>
                 Comments
               </p>
             </NavLink>
